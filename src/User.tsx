@@ -11,7 +11,7 @@ export function User() {
       </Avatar>
 
       <YStack>
-        <Text>Olá</Text>
+        <Text color="$background">Olá</Text>
 
         <H4 fontWeight="bold" color="$background" mt="$-2">
           Fabricio

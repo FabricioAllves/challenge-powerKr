@@ -13,7 +13,7 @@ export const Button = styled(TButton, {
       },
       outline: {
         borderWidth: '$1',
-        borderColor: '$blue10',
+        borderColor: '$red10',
       },
     },
   } as const,

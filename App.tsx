@@ -20,7 +20,7 @@ export default function App() {
     <TamaguiProvider config={config}>
       <YStack bg="$background1" f={1} p="$6" pt="$8">
         <User />
-        <Button background="outline" />
+        <Button background="normal" />
       </YStack>
     </TamaguiProvider>
   );

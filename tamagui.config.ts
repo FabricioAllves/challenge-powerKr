@@ -25,15 +25,25 @@ const animations = createAnimations({
   },
 });
 
-const headingFont = createInterFont();
+const headingFont = createInterFont({
+  color: {
+    white: '#000',
+    black: '#000',
+  },
+});
 
-const bodyFont = createInterFont();
+const bodyFont = createInterFont({
+  color: {
+    white: '#000',
+    black: '#000',
+  },
+});
 
 const config = createTamagui({
   light: {
     color: {
       background: 'gray',
-      text: 'black',
+      text: '#000',
     },
   },
   defaultFont: 'body',
