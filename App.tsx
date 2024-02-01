@@ -1,24 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
+import { useFonts } from 'expo-font';
 import React from 'react';
-import { View } from 'react-native';
-import { TamaguiProvider, Text, styled } from 'tamagui';
+import { TamaguiProvider, YStack } from 'tamagui';
 
 import config from './tamagui.config';
 
-const MyView = styled(View, {
-  name: 'MyView',
-  flex: 1,
-  alignItems: 'center',
-  justifyContent: 'center',
-});
+import { Button } from '~/Button';
+import { User } from '~/User';
 
 export default function App() {
+  const [loaded] = useFonts({
+    Inter: require('@tamagui/font-inter/otf/Inter-Medium.otf'),
+    InterBold: require('@tamagui/font-inter/otf/Inter-Bold.otf'),
+  });
+
+  if (!loaded) {
+    return null;
+  }
   return (
     <TamaguiProvider config={config}>
-      <MyView>
-        <Text>Open up App.tsx to start working on your app!</Text>
-        <StatusBar style="auto" />
-      </MyView>
+      <YStack bg="$background1" f={1} p="$6" pt="$8">
+        <User />
+        <Button background="outline" />
+      </YStack>
     </TamaguiProvider>
   );
 }
