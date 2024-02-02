@@ -1,6 +1,7 @@
 import React from 'react';
 import { XStack, YStack, Text } from 'tamagui';
 
+import { Button } from '~/components/Button';
 import { Header } from '~/components/Header';
 import { SelectOptions } from '~/components/SelectOptions';
 
@@ -14,8 +15,12 @@ export function Home() {
           <Text color="$white" fontSize="$7">
             Olá, Fabricio
           </Text>
-
           <SelectOptions />
+        </XStack>
+
+        <XStack ai="center" jc="space-between" mt="$5">
+          <Button buttonType="buttonOption">Pessoal</Button>
+          <Button buttonType="buttonOption">Geral</Button>
         </XStack>
       </YStack>
     </YStack>

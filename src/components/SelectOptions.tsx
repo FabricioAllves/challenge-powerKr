@@ -11,7 +11,7 @@ export function SelectOptions(props: SelectProps) {
     <Select id="Todos" value={val} onValueChange={setVal} disablePreventBodyScroll {...props}>
       <Select.Trigger
         w={120}
-        h={2}
+        h={0}
         borderRadius={25}
         borderColor="white"
         borderWidth={0.5}

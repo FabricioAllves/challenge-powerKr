@@ -1,7 +1,5 @@
-import { AlignJustify, Bell } from '@tamagui/lucide-icons';
 import { YStack } from 'tamagui';
-
-import { Button } from '~/Button';
+import { Button } from './Button';
 
 export const Header = () => {
   return (

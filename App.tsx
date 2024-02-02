@@ -5,7 +5,7 @@ import { TamaguiProvider, YStack } from 'tamagui';
 
 import config from './tamagui.config';
 
-import { Button } from '~/Button';
+import { Button } from '~/components/Button';
 import { User } from '~/User';
 import { Header } from '~/components/Header';
 import { Home } from '~/pages/Home';
