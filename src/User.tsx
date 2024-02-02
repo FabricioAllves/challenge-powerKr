@@ -3,7 +3,7 @@ import { Avatar, Text, XStack, YStack, H4 } from 'tamagui';
 
 export function User() {
   return (
-    <XStack space="$2" ai="center">
+    <XStack gap="$2" ai="center">
       <Avatar size="$5" circular>
         <Avatar.Image src="https://github.com/FabricioAllves.png" />
 
@@ -11,7 +11,7 @@ export function User() {
       </Avatar>
 
       <YStack>
-        <Text color="$background">Olá</Text>
+        <Text color="$token.teste">Olá</Text>
 
         <H4 fontWeight="bold" color="$background" mt="$-2">
           Fabricio

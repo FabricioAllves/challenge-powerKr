@@ -3,7 +3,7 @@ import { createInterFont } from '@tamagui/font-inter';
 import { createMedia } from '@tamagui/react-native-media-driver';
 import { shorthands } from '@tamagui/shorthands';
 import { themes, tokens } from '@tamagui/themes';
-import { createTamagui } from 'tamagui';
+import { createTamagui, createTokens } from 'tamagui';
 
 const animations = createAnimations({
   bouncy: {
@@ -40,11 +40,10 @@ const bodyFont = createInterFont({
 });
 
 const config = createTamagui({
-  light: {
-    color: {
-      background: 'gray',
-      text: '#000',
-    },
+  color: {
+    background: 'gray',
+    text: '#000',
+    teste: '#999914',
   },
   defaultFont: 'body',
   animations,

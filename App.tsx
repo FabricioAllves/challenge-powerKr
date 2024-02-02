@@ -1,11 +1,14 @@
 import { useFonts } from 'expo-font';
 import React from 'react';
+import { StatusBar } from 'react-native';
 import { TamaguiProvider, YStack } from 'tamagui';
 
 import config from './tamagui.config';
 
 import { Button } from '~/Button';
 import { User } from '~/User';
+import { Header } from '~/components/Header';
+import { Home } from '~/pages/Home';
 
 export default function App() {
   const [loaded] = useFonts({
@@ -18,9 +21,9 @@ export default function App() {
   }
   return (
     <TamaguiProvider config={config}>
-      <YStack bg="$background1" f={1} p="$6" pt="$8">
-        <User />
-        <Button background="normal" />
+      <StatusBar barStyle="dark-content" translucent={false} backgroundColor="#262738" />
+      <YStack bg="#121926" f={1}>
+        <Home />
       </YStack>
     </TamaguiProvider>
   );
