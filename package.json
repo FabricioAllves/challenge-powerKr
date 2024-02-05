@@ -17,6 +17,7 @@
     "@tamagui/lucide-icons": "^1.88.18",
     "@tamagui/react-native-media-driver": "^1.88.18",
     "@tamagui/shorthands": "1.74.8",
+    "@tamagui/switch": "^1.89.0",
     "@tamagui/theme-base": "^1.88.18",
     "@tamagui/themes": "1.74.8",
     "expo": "~50.0.5",
@@ -26,12 +27,14 @@
     "react": "18.2.0",
     "react-native": "0.73.2",
     "react-native-svg": "^14.1.0",
+    "react-native-svg-charts": "^5.4.0",
     "tamagui": "^1.88.18"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@tamagui/babel-plugin": "1.74.8",
     "@types/react": "~18.2.14",
+    "@types/react-native-svg-charts": "^5.0.16",
     "@typescript-eslint/eslint-plugin": "^6.7.2",
     "@typescript-eslint/parser": "^6.7.2",
     "eslint": "^8.50.0",

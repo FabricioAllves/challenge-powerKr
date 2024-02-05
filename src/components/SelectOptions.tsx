@@ -14,7 +14,7 @@ export function SelectOptions(props: SelectProps) {
         h={0}
         borderRadius={25}
         borderColor="white"
-        borderWidth={0.5}
+        borderWidth={0.25}
         bg="#121926"
         color="white"
         iconAfter={ChevronDown}>
