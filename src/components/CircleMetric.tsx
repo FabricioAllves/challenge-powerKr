@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { View, Text, StyleSheet, Animated } from 'react-native';
 import Svg, { Circle } from 'react-native-svg';
 
@@ -12,7 +12,6 @@ export const CircularProgress = ({ size, strokeWidth, progress }: CircularProgre
   const animated = new Animated.Value(0);
   const radius = (size - strokeWidth) / 2;
   const circumference = radius * 2 * Math.PI;
-  //const strokeDashoffset = Animated.multiply(animated, circumference / 100);
 
   useEffect(() => {
     Animated.timing(animated, {
@@ -25,7 +24,6 @@ export const CircularProgress = ({ size, strokeWidth, progress }: CircularProgre
   return (
     <View style={{ justifyContent: 'center', alignItems: 'center' }}>
       <Svg width={size} height={size}>
-        {/* Background Circle */}
         <Circle
           stroke="#333"
           fill="none"

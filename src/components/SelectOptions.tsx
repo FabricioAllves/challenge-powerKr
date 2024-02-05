@@ -1,7 +1,7 @@
 import { Check, ChevronDown, ChevronUp } from '@tamagui/lucide-icons';
 import { useMemo, useState } from 'react';
 import type { FontSizeTokens, SelectProps } from 'tamagui';
-import { Adapt, Label, Select, Sheet, XStack, YStack, getFontSize } from 'tamagui';
+import { Adapt, Select, Sheet, YStack, getFontSize } from 'tamagui';
 import { LinearGradient } from 'tamagui/linear-gradient';
 
 export function SelectOptions(props: SelectProps) {
@@ -60,13 +60,7 @@ export function SelectOptions(props: SelectProps) {
           />
         </Select.ScrollUpButton>
 
-        <Select.Viewport
-          // to do animations:
-          // animation="quick"
-          // animateOnly={['transform', 'opacity']}
-          // enterStyle={{ o: 0, y: -10 }}
-          // exitStyle={{ o: 0, y: 10 }}
-          minWidth={200}>
+        <Select.Viewport minWidth={200}>
           <Select.Group>
             <Select.Label>Escolha uma opção</Select.Label>
             {/* for longer lists memoizing these is useful */}
