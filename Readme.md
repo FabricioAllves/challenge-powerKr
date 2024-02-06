@@ -3,7 +3,7 @@
 
 ## Sobre o processo de desenvolvimento :
 
-Aplicativo desenvolvido durante a etapa do processo seletivo para a vaga de Desenvolvedor Mobile Jr. na PowerKr. Ao longo do processo até a sua conclusão, tive meu primeiro contato com o Tamagui, um framework de UI para React e React Native, o qual eu não conhecia e cuja proposta de uso achei bastante interessante. O app possui 3 telas: Login, Home e Profile.
+Ao longo do processo até a sua conclusão, tive meu primeiro contato com o Tamagui, um framework de UI para React e React Native, o qual eu não conhecia e cuja proposta de uso achei bastante interessante. O app possui 3 telas: Login, Home e Profile.
 
 
 ## :rocket: Principais Tecnologias utilizadas:
