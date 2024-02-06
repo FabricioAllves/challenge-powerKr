@@ -6,14 +6,14 @@ import { XStack, YStack, Text, H1 } from 'tamagui';
 
 import { AvatarProfile } from '~/components/AvatarProfile';
 import { ButtonApprovedCommitments } from '~/components/ButtonApprovedCommitments';
-import { CircularProgress } from '~/components/CircleMetric';
+import { CircularProgress } from '~/components/ButtonCircularProgress';
 import { Header } from '~/components/Header';
 import { SelectOptions } from '~/components/Select';
 import { AppNavigatorRoutesProps } from '~/routes/app.tab.routes';
 import { Button } from '~/styles/variants/Button';
 
 export function Home() {
-  const {navigate }= useNavigation<AppNavigatorRoutesProps>();
+  const { navigate } = useNavigation<AppNavigatorRoutesProps>();
 
   return (
     <YStack bg="#121926" f={1}>
