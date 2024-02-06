@@ -41,7 +41,7 @@ const bodyFont = createInterFont({
 
 const config = createTamagui({
   color: {
-    background: 'gray',
+    background: '#000',
     text: '#000',
     teste: '#999914',
   },

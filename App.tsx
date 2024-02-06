@@ -5,8 +5,7 @@ import { TamaguiProvider, YStack } from 'tamagui';
 
 import config from './tamagui.config';
 
-import { Home } from '~/pages/Home';
-import { Profile } from '~/pages/Profile';
+import { Routes } from '~/routes';
 
 export default function App() {
   const [loaded] = useFonts({
@@ -21,7 +20,7 @@ export default function App() {
     <TamaguiProvider config={config}>
       <StatusBar barStyle="dark-content" translucent={false} backgroundColor="#121926" />
       <YStack bg="#121926" f={1}>
-        <Home />
+        <Routes />
       </YStack>
     </TamaguiProvider>
   );
